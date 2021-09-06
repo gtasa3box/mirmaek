@@ -1,7 +1,11 @@
 .nav {
     padding-bottom: 30px;
     padding-top: 15px;
-    a {
+    &__drop {
+        display: inline-block;
+        position: relative;
+    }
+    &__elem {
         font-family: "Montserrat", sans-serif;
         font-size: 23px;
         line-height: 1.25;
@@ -12,25 +16,53 @@
         padding: 4px 15px 6px;
         position: relative;
         transition: 0.3s ease;
-        &:not(:first-child){
-            &:before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                margin-top: -3px;
-                left: -3px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                background-color: #ff0000;
-                transition: 0.3s ease;
-            }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -3px;
+            left: -3px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            transition: 0.3s ease;
         }
         &:hover {
             color: rgb(247, 27, 27);
             &:before {
                 background-color: transparent;
             }
+        }
+    }
+    .not-before {
+        &:before {
+            display: none;
+        }
+    }
+}
+.dropbox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 23px 30px 25px;
+    display: none;
+    &__elem {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        line-height: 1.25;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.0em;
+        color: #ffffff;
+        transition: 0.3s ease;
+        &:not(:first-child) {
+            margin-top: 8px;
+        }
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
