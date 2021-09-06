@@ -1,0 +1,84 @@
+.order {
+    background-color: black;
+    padding-top: 20px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 88px;
+    }
+    &__steps {
+        position: relative;
+        width: 20%;
+    }
+    &__scheme {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__tringle {
+        position: relative;
+        border-style: solid;
+        border-width: 52px 0 52px 86px;
+        border-color: transparent;
+        border-left-color: #f71b1b;
+        transition: border-color 0.25s ease;
+        &:hover {
+            border-left-color: black;
+        }
+        &:before {
+            content: '1';
+            position: absolute;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+            font-style: normal !important;
+            font-size: 26px;
+            line-height: 0;
+            font-weight: 4;
+            font-style: normal;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            left: -65px;  
+        }
+    }
+    .tringle2 {
+        &:before {
+            content: '2'; 
+        }
+    }
+    .tringle3 {
+        &:before {
+            content: '3'; 
+        }
+    }
+    .tringle4 {
+        &:before {
+            content: '4'; 
+        }
+    }
+    &__arrows {
+        background-image: url(../img/arrows.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 69px;
+        height: 9px;
+        margin-left: 30px;
+
+    }
+    &__info {
+        padding: 12px 0 0 40px;
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+            font-style: normal !important;
+            font-size: 16px;
+            line-height: 1.4;
+            font-weight: 4;
+            font-style: normal;
+            letter-spacing: 0.0em;
+            color: #ffffff;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+}
