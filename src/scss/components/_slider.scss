@@ -1,12 +1,3 @@
-.slider {
-
-    &__slide {
-
-    }
-    &_textile {
-
-    }
-}
 
 .slide {
     margin: 0 auto;
@@ -17,6 +8,18 @@
         background-repeat: no-repeat; 
         display: flex;
         align-items: flex-end;
+    }
+    &_examples {
+        width: 310px;
+        height: 310px;
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: center; 
+        display: block;
+        transition: 0.3s ease;
+        &:hover {
+            background-size: 200%;
+        }
     }
 
     &__wrapper {
@@ -69,6 +72,20 @@
     }
     .slick-dots li button:before {
         color:white;
+    }  
+}
+
+.examples__slider {
+    .slick-dots {
+        bottom: -50px;
+    }
+    .slick-dots li button:before {
+        color:white;
+        font-size: 12px;
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #fe3a00;
     }  
 }
       
