@@ -1,0 +1,21 @@
+.textile {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    &__title {
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+            font-style: normal !important;
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 4;
+            font-style: normal;
+            letter-spacing: 0.0em;
+            color: #ff0000;
+            text-align: center;
+        }
+    }
+    &__slider {
+        margin-top: 20px;
+    }
+}

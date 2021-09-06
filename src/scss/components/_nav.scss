@@ -48,6 +48,7 @@
     background-color: #000000;
     padding: 23px 30px 25px;
     display: none;
+    z-index: 3;
     &__elem {
         color: white;
         font-family: "Montserrat", sans-serif;
@@ -58,6 +59,7 @@
         letter-spacing: 0.0em;
         color: #ffffff;
         transition: 0.3s ease;
+        white-space: nowrap;
         &:not(:first-child) {
             margin-top: 8px;
         }
