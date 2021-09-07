@@ -1,0 +1,35 @@
+.print-info {
+    &__content {
+        padding-bottom: 40px;
+    }
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        font-size: 17px;
+        line-height: 1.7;
+        font-weight: 4;
+        font-style: normal;
+        letter-spacing: 0.0em;
+        color: #000000;
+        text-align: center;
+        p {
+            margin-bottom: 28.9px;
+        }
+    }
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        a {
+            display: block;
+            width: 560px;
+            height: 420px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__img {
+        width: 45%;
+    }
+}
