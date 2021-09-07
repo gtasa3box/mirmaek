@@ -1,0 +1,41 @@
+.promo {
+    &__content {
+        display: flex;
+    }
+    &__img {
+        margin-right: 60px;
+        a {
+            display: block;
+            background-image: url(../img/promo/1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 240px;
+            height: 414px;
+        }
+    }
+    &__info {
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            color: #000000;
+            font-weight: 600;
+            font-style: normal;
+            text-transform: none;
+            letter-spacing: 0em;
+            margin-bottom: 0.92308em;
+            line-height: 180%;
+        }
+    }
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20.5px !important;
+        font-size: 18px;
+        color: #000000;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: none;
+        letter-spacing: 0em;
+        margin-bottom: .6em;
+    }
+
+}

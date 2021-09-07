@@ -21,6 +21,14 @@
             background-size: 200%;
         }
     }
+    &_slider-product {
+        display: block;
+        width: 244px;
+        height: 244px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
 
     &__wrapper {
         &_textile {
@@ -98,6 +106,45 @@
     }
     .slick-next:before {
         background-image: url(../img/arrow2.png);
+        background-size: 27px 50px;
+        background-repeat: no-repeat;
+        display: block;
+        width: 27px; 
+        height: 50px;
+        content: '';
+        transform: rotate(-180deg);
+    }
+    .slick-prev {
+        left: -40px;
+    }
+    .slick-next {
+        right: -40px;
+    }  
+}
+
+.slider-product__slider {
+    .slick-dots {
+        bottom: -50px;
+    }
+    .slick-dots li button:before {
+        color:#d7d7d7;
+        font-size: 12px;
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #fe3a00;
+    }
+    .slick-prev:before {
+        background-image: url(../img/arrow2-black.png);
+        background-size: 27px 50px;
+        background-repeat: no-repeat;
+        display: block;
+        width: 27px; 
+        height: 50px;
+        content: '';
+    }
+    .slick-next:before {
+        background-image: url(../img/arrow2-black.png);
         background-size: 27px 50px;
         background-repeat: no-repeat;
         display: block;

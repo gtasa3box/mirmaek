@@ -1,0 +1,43 @@
+.card {
+    width: 30%;
+    margin-bottom: 40px;
+    &__wrapper {
+
+    }
+    &__img {
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 360px;
+        height: 270px;
+        transition: 0.3s ease;
+        &:hover {
+            background-size: 130%; 
+        }
+    }
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 4;
+        font-style: normal;
+        letter-spacing: 0.0em;
+        color: #1a1a1a;
+        text-align: center;
+        margin: 14px 0;
+
+    }
+    &__info {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #2e2e2e;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: none;
+        line-height: 1.5;
+        letter-spacing: -0.05em;
+    }
+}

@@ -6,9 +6,21 @@
 @import "./components/logo";
 @import "./components/backcall";
 @import "./components/slider";
+@import "./components/main/cards";
+@import "./components/button-up";
 
 @import "./components/header";
-
+//main
 @import "./components/main/textile";
 @import "./components/main/examples";
 @import "./components/main/order";
+@import "./components/main/methods";
+@import "./components/main/promo";
+//end main
+@import "./components/footer";
+
+//t-shirts
+@import "./components/products/material";
+@import "./components/products/slider-product";
+
+
