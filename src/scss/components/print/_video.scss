@@ -1,0 +1,11 @@
+.video-block {
+    &__content {
+        overflow:hidden;
+        iframe {
+            margin-top: -100px;
+            margin-bottom: -100px;
+            position: relative;
+            transform: scale(1.2);
+        }
+    }
+}
