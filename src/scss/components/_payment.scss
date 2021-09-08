@@ -70,6 +70,9 @@
             &:before {
                 left: -21px;
             }
+            &:last-child {
+                border-left: none;
+            }
         }
         h3 {
             
