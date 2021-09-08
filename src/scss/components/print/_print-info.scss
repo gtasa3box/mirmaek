@@ -1,6 +1,5 @@
 .print-info {
     &__content {
-        padding-bottom: 40px;
     }
     &__text {
         font-family: "Montserrat", sans-serif;
@@ -16,10 +15,23 @@
         p {
             margin-bottom: 28.9px;
         }
+        .small-text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+            font-style: normal !important;
+            font-size: 15px;
+            line-height: 1.7;
+            font-weight: 4;
+            font-style: normal;
+            letter-spacing: 0.0em;
+            color: #000000;
+            text-align: center;
+        }
     }
     &__images {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         a {
             display: block;
             width: 560px;
@@ -27,6 +39,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            margin-bottom: 40px;
         }
     }
     &__img {
