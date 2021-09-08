@@ -35,6 +35,7 @@
         animation-fill-mode: none;
         -webkit-animation-play-state: running;
         animation-play-state: running;
+        cursor:pointer;
         @keyframes pulsate {
             0% {
                 -webkit-transform: scale(1, 1);
