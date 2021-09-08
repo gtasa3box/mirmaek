@@ -5,10 +5,10 @@ console.log('global');
 $(document).ready(function () {
     $(".drop-1").hover(
   function () {
-     $('.dropbox-1').slideDown('medium');
+     $('.dropbox-1').stop(true, false).slideDown('medium');
   }, 
   function () {
-     $('.dropbox-1').slideUp('medium');
+     $('.dropbox-1').stop(true, false).slideUp('medium');
   }
   
 );
@@ -17,13 +17,15 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".drop-2").hover(
   function () {
-     $('.dropbox-2').slideDown('medium');
+     $('.dropbox-2').stop(true, false).slideDown('medium');
   }, 
   function () {
-     $('.dropbox-2').slideUp('medium');
+     $('.dropbox-2').stop(true, false).slideUp('medium');
   }
 );
 });
+
+
 //end-nav-dropbox
 
 //slider-textile 
