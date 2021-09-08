@@ -1,4 +1,7 @@
 .print-info {
+    &_black {
+        background-color: black;
+    }
     &__content {
     }
     &__text {
@@ -32,7 +35,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        &_complete-seal {
+        &_pt {
             padding: 20px 0 60px;
         }
         a {
@@ -42,13 +45,13 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         h3 {
             font-family: "Montserrat", sans-serif;
             font-weight: 600 !important;
             font-style: normal !important;
-            font-size: 23px;
+            font-size: 20px;
             line-height: 1.25;
             font-weight: 4;
             font-style: normal;
@@ -59,5 +62,24 @@
     }
     &__img {
         width: 45%;
+        margin-bottom: 20px;
+        &_mugs {
+            width: 30%;
+            a {
+                width: 360px;
+                height: 276px;
+                background-size: contain;
+            }
+        }
+        &_hover {
+            a {
+                background-size: 100%;
+                transition: 0.3s ease;
+                &:hover {
+                    background-size: 130%;
+                }
+            }
+            
+        }
     }
 }
