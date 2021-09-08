@@ -1,0 +1,22 @@
+.contacts {
+    background-color: black;
+    &__info {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 4;
+        font-style: normal;
+        letter-spacing: 0.0em;
+        color: #ffffff;
+        text-align: center;
+        a {
+            display: block;
+            color: white;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
