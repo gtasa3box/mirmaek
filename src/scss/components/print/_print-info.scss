@@ -32,6 +32,9 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_complete-seal {
+            padding: 20px 0 60px;
+        }
         a {
             display: block;
             width: 560px;
@@ -40,6 +43,18 @@
             background-repeat: no-repeat;
             background-position: center;
             margin-bottom: 40px;
+        }
+        h3 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+            font-style: normal !important;
+            font-size: 23px;
+            line-height: 1.25;
+            font-weight: 4;
+            font-style: normal;
+            letter-spacing: 0.0em;
+            color: #000000;
+            text-align: center;
         }
     }
     &__img {
