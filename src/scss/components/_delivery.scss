@@ -1,0 +1,39 @@
+.delivery {
+    &__title {
+        margin-bottom: 15px
+    }
+    .wrapper {
+        max-width: 800px;
+    }
+    &__content {
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        line-height: 1.65;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.0em;
+        color: #000000;
+        text-align: center;
+        padding: 20px 0;
+        p {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            &:before {
+                content: '';
+                border-bottom: 1px dashed #ff0000;;
+                flex-grow: 1;
+                order: 2;
+                margin: 0 20px 10px;
+                
+            }
+            span {
+                order: 3;
+                color: #ff0000;
+            }
+            &:not(:first-child) {
+                margin-top: 0.92308em;
+            }
+        }
+    }
+}

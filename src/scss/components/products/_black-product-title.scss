@@ -14,4 +14,26 @@
     &_small {
         font-size: 23px;
     }
+    &_button {
+        a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+            font-style: normal !important;
+            font-size: 20px;
+            line-height: 1.25;
+            font-weight: 4;
+            font-style: normal;
+            letter-spacing: 0.0em;
+            border-color: #f71b1b;
+            border-width: 3px;
+            border-radius: 20px;
+            padding: 13px;
+            color: #ffffff;
+            background-color: #f71b1b;
+            transition: 0.3s ease;
+            &:hover {
+                background-color: #f71b1bb0;
+            }
+        }
+    }
 }
