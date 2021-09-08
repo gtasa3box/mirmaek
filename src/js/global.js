@@ -169,4 +169,16 @@ $(function(){
   });
 });
 
-////video-end
+//video-end
+
+//discount button
+
+$('.button-discount__img').on('click', function(){
+  $('.button-discount__img').toggleClass('active');
+});
+
+$('.drop-3').on("click",function(){
+  $(this).find(".dropbox-3").toggle();
+});
+
+//discount button-end

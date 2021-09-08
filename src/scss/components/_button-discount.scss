@@ -1,0 +1,120 @@
+.button-discount{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 60;
+    &__img {			
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        background-color: #f71b1b;
+        border-color: #f71b1b;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 62px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 50%;
+        -webkit-animation-name: pulsate;
+        animation-name: pulsate;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        animation-direction: normal;
+        -webkit-animation-fill-mode: none;
+        animation-fill-mode: none;
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        @keyframes pulsate {
+            0% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+            30% {
+                -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+            }
+            60% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/q.png);
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+        &.active {
+            animation: none;
+            &:before {
+                background-image: url(../img/x.png);
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .dropbox-3 {
+            position: absolute;
+            top: -130px;
+            display: none;
+        }
+        a {
+            display: block;
+            background-color: white;
+            border-radius: 50%;
+            background-size: contain;
+            width: 54px;
+            height: 54px;
+        }
+        .telegram {
+            background-image: url(../img/tg.svg);
+            margin-bottom: 10px;
+            
+        }
+        .whatsapp {
+            background-image: url(../img/what.svg);
+        }
+    }
+    
+    p {
+        position: absolute;
+        left: -295px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 4px;
+        background-color: #000000c4;
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal !important;
+        font-style: normal !important;
+        font-size: 17px;
+        line-height: 1.4;
+        letter-spacing: 0.0em;
+        color: #ffffff;
+        padding: 5px 10px;
+        &:before {
+            content: ''; 
+            position: absolute;
+            right: -11px; 
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-clip-path: polygon(0 26%, 0 74%, 100% 50%);
+            clip-path: polygon(0 26%, 0 74%, 100% 50%);
+            background-color: #000000c4;
+            width: 11px;
+            height: 30px;
+        }
+    }  
+}
+
