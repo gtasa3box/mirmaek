@@ -5,9 +5,15 @@
     }
     &__content {
         display: flex;
+        @media screen and (max-width: 640px) {
+            flex-wrap: wrap;
+        }
     }
     &__tshirts {
         width: 50%;
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
     }
     &__img {
         display: block;
@@ -21,6 +27,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+            background-size: contain;
+        }
+        @media screen and (max-width: 450px) {
+            height: 300px;
+        }
         p {
             display: inline-flex;
             padding: 10px 20px 10px 48px;

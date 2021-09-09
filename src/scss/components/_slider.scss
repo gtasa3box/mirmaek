@@ -145,6 +145,9 @@
 .slider-product__slider {
     .slick-dots {
         bottom: -50px;
+        @media screen and (max-width: 430px) {
+            bottom: -65px;
+        }
     }
     .slick-dots li button:before {
         color:#d7d7d7;
