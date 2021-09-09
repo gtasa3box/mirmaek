@@ -8,6 +8,9 @@
     font-style: normal;
     letter-spacing: 0.0em;
     color: #ffffff;
+    @media screen and (max-width: 784px) {
+        display: none;
+    }
     a {
         display: block;
         font-family: "Montserrat", sans-serif;
@@ -42,6 +45,10 @@
         margin-top: 8px;
         &_mobile {
             display: none;
+            @media screen and (max-width: 784px) {
+                display: inline-block;
+                cursor: pointer;
+            }
         }
     }
 }

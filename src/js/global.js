@@ -1,29 +1,63 @@
 console.log('global');
 
 //nav-dropbox
+  //hover
+  $(document).ready(function () {
+      $(".drop-1").hover(
+    function () {
+      $('.one-drop').stop(true, false).slideDown('medium');
+    }, 
+    function () {
+      $('.one-drop').stop(true, false).slideUp('medium');
+    }
+    
+  );
+  });
 
-$(document).ready(function () {
-    $(".drop-1").hover(
-  function () {
-     $('.dropbox-1').stop(true, false).slideDown('medium');
-  }, 
-  function () {
-     $('.dropbox-1').stop(true, false).slideUp('medium');
+  $(document).ready(function () {
+      $(".drop-2").hover(
+    function () {
+      $('.two-drop').stop(true, false).slideDown('medium');
+    }, 
+    function () {
+      $('.two-drop').stop(true, false).slideUp('medium');
+    }
+  );
+  });
+  //end-hover
+  //delete class hover
+  $(window).on('load resize',function() {
+    if ($(this).width() > 700) {
+        $('.dropbox-2').addClass("two-drop");
+    } else {
+        $('.dropbox-2').removeClass("two-drop");
+    }
+  });
+
+  $(window).on('load resize',function() {
+    if ($(this).width() > 700) {
+        $('.dropbox-1').addClass("one-drop");
+    } else {
+        $('.dropbox-1').removeClass("one-drop");
+    }
+  });
+  //delete class hover -end//
+//click drop
+$(window).on('load resize',function() {
+  if ($(this).width() < 700) {
+    $('.drop-2').on('click', function(){
+      $('.dropbox-2').toggleClass('active');
+    });
+    $('.drop-1').on('click', function(){
+      $('.dropbox-1').toggleClass('active');
+    });
+  } else {
+    return
   }
-  
-);
 });
 
-$(document).ready(function () {
-    $(".drop-2").hover(
-  function () {
-     $('.dropbox-2').stop(true, false).slideDown('medium');
-  }, 
-  function () {
-     $('.dropbox-2').stop(true, false).slideUp('medium');
-  }
-);
-});
+
+
 
 
 //end-nav-dropbox
@@ -186,3 +220,10 @@ $('.drop-3').on("click",function(){
 //mask input
 $(".phone_mask").mask("+7 (999) 999-9999");
 //end mask
+
+//burger
+
+$('#burger').on('click', function(){
+  $('#burgerlink').toggleClass('active');
+  $('.header__nav').toggleClass('active');
+});

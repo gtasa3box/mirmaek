@@ -1,9 +1,14 @@
 .nav {
     padding-bottom: 30px;
     padding-top: 15px;
+    flex-wrap: wrap;
+    text-align: center;
     &__drop {
         display: inline-block;
         position: relative;
+        @media screen and (max-width: 600px) {
+            position: unset;
+        }
     }
     &__elem {
         font-family: "Montserrat", sans-serif;
@@ -16,6 +21,9 @@
         padding: 4px 15px 6px;
         position: relative;
         transition: 0.3s ease;
+        display: inline-flex;
+        cursor: pointer;
+        position: relative;
         &:before {
             content: '';
             position: absolute;
@@ -34,10 +42,37 @@
                 background-color: transparent;
             }
         }
+        @media screen and (max-width: 1310px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 808px) {
+            font-size: 18px;
+        }
     }
     .not-before {
         &:before {
             display: none;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        background-color: black;
+        border-top: 1px solid white;
+        top: 50px;
+        &__elem  {
+            display: inline-flex;
+            width: 100%;
+        }
+        a {
+            width: 100%;
+            justify-content: center;
+            &::before {
+                display: none;
+            }
         }
     }
 }
@@ -49,6 +84,9 @@
     padding: 23px 30px 25px;
     display: none;
     z-index: 3;
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
     &__elem {
         color: white;
         font-family: "Montserrat", sans-serif;
@@ -65,6 +103,18 @@
         }
         &:hover {
             opacity: 0.8;
+        }
+    }
+    &.active {
+        @media screen and (max-width: 700px) {
+            display: block;
+        }
+        @media screen and (max-width: 600px) {
+            display: flex;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            border-top: 1px solid white;
         }
     }
 }
