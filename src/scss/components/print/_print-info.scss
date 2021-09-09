@@ -46,6 +46,16 @@
             background-repeat: no-repeat;
             background-position: center;
             margin-bottom: 20px;
+            @media screen and (max-width: 1070px) {
+                width: 100%;
+                background-size: contain;
+            }
+            @media screen and (max-width: 800px) {
+                height: 300px;
+            }
+            @media screen and (max-width: 500px) {
+                height: 250px; 
+            }
         }
         h3 {
             font-family: "Montserrat", sans-serif;
@@ -63,6 +73,10 @@
     &__img {
         width: 45%;
         margin-bottom: 20px;
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            margin-bottom: 0;
+        }
         &_mugs {
             width: 30%;
             a {
