@@ -19,4 +19,14 @@
             }
         }
     }
+    &__map {
+        @media screen and (max-width: 1208px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            iframe {
+                height: 300px;
+            }
+        }
+    }
 }
