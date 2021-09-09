@@ -86,12 +86,26 @@
     }
     .slick-dots li button:before {
         color:white;
-    }  
+    } 
+    @media screen and (max-width: 1000px) {
+        .slick-prev {
+            left: -10px;
+        }
+        .slick-next {
+            right: -10px;
+        }   
+    } 
 }
 
 .examples__slider {
     .slick-dots {
         bottom: -50px;
+        @media screen and (max-width: 600px) {
+            bottom: -70px;
+        }
+        @media screen and (max-width: 400px) {
+            bottom: -90px; 
+        }
     }
     .slick-dots li button:before {
         color:white;

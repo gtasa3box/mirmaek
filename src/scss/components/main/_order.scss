@@ -5,10 +5,19 @@
         display: flex;
         justify-content: space-between;
         padding: 40px 88px;
+        @media screen and (max-width: 784px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 600px) {
+            padding: 20px 15px;
+        }
     }
     &__steps {
         position: relative;
         width: 20%;
+        @media screen and (max-width: 784px) {
+            width: 45%;
+        }
     }
     &__scheme {
         display: flex;
@@ -62,6 +71,14 @@
         width: 69px;
         height: 9px;
         margin-left: 30px;
+        @media screen and (max-width: 784px) {
+            &.even {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
 
     }
     &__info {

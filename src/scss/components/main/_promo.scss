@@ -1,8 +1,15 @@
 .promo {
     &__content {
         display: flex;
+        @media screen and (max-width: 640px) {
+            flex-wrap: wrap;
+        }
     }
     &__img {
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
         margin-right: 60px;
         a {
             display: block;
@@ -14,6 +21,9 @@
         }
     }
     &__info {
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
         p {
             font-family: "Montserrat", sans-serif;
             font-size: 18px;

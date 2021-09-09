@@ -1,6 +1,10 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 1000px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .black-block {
     background-color: #000;
@@ -18,6 +22,9 @@
     text-align: center;
     &_black {
         color: black;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 30px;
     }
 }
 .big-title {
