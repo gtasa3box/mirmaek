@@ -1,6 +1,9 @@
 .textile {
     padding-top: 10px;
     padding-bottom: 40px;
+    a {
+        cursor: pointer;
+    }
     &__title {
         p {
             font-family: "Montserrat", sans-serif;

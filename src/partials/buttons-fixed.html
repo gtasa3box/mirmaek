@@ -15,3 +15,46 @@
     </div>
   </div>
    <!--Кнопка заказа со скидкой-end-->
+
+   <!--формы-->
+   <!--маленькая форма-->
+   <div class="form form_lite" id="hidden-form_lite" style="display: none;">
+     <h2 class="form__title">Отправить заявку</h2>
+     <p class="form__info">Просто оставьте нам свои контактные данные, наши менеджеры свяжутся с вами и ответят на все интересующие вас вопросы.</p>
+     <form action="" method="POST">
+       <input class="input__text" type="text" placeholder="Имя" required>
+       <input class="input__text phone_mask" type="tel" placeholder="+7 (___) ___-____" required>
+       <input class="input__text" type="email" placeholder="Email" required>
+       <p>Изображение</p>
+       <input class="input__file" type="file">
+       <input class="input__button" type="submit">
+     </form>
+   </div>
+
+   <!--большая форма-->
+   <div class="form" id="hidden-form" style="display: none;">
+    <h2 class="form__title">Отправить заявку</h2>
+    <p class="form__info">Просто оставьте нам свои контактные данные, наши менеджеры свяжутся с вами и ответят на все интересующие вас вопросы.</p>
+    <form action="" method="POST">
+      <input class="input__text" type="text" placeholder="Имя" required>
+      <input class="input__text" type="email" placeholder="Email" required>
+      <input class="input__text phone_mask" type="tel" placeholder="+7 (___) ___-____" required>
+      <p>Выберите город</p>
+      <select class="select__text">
+        <option disabled selected class="select__var">Выберите город</option>
+        <option class="select__var" value="spb">Санкт-Петербург</option>
+        <option class="select__var" value="msk">Москва</option>
+      </select>
+      <input class="input__text" type="text" placeholder="Адрес доставки (если нужна доставка)" >
+      <input class="input__text" type="text" placeholder="Что хотите заказать?" >
+      <input class="input__text" type="text" placeholder="Количество" >
+      <input class="input__text" type="text" placeholder="Комментарий" >
+      <p>Прикрепите изображение</p>
+      <input class="input__file" type="file">
+      <input class="input__button" type="submit">
+    </form>
+  </div>
+  <!--формы-end-->
+  
+
+  

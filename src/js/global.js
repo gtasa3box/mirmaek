@@ -182,3 +182,7 @@ $('.drop-3').on("click",function(){
 });
 
 //discount button-end
+
+//mask input
+$(".phone_mask").mask("+7 (999) 999-9999");
+//end mask
