@@ -79,10 +79,20 @@
         }
         &_mugs {
             width: 30%;
+            @media screen and (max-width: 640px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 440px) {
+                width: 100%;
+                margin-bottom: 40px;
+            }
             a {
                 width: 360px;
                 height: 276px;
                 background-size: contain;
+                @media screen and (max-width: 1000px) {
+                    width: 100%;
+                }
             }
         }
         &_hover {
