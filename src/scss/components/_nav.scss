@@ -62,7 +62,7 @@
         position: absolute;
         background-color: black;
         border-top: 1px solid white;
-        top: 50px;
+        top: 80px;
         &__elem  {
             display: inline-flex;
             width: 100%;
@@ -74,6 +74,9 @@
                 display: none;
             }
         }
+    }
+    @media screen and (max-width: 400px) {
+        top: 50px; 
     }
 }
 .dropbox {
