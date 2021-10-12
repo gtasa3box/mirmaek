@@ -21,7 +21,7 @@
    <div class="form form_lite" id="hidden-form_lite" style="display: none;">
      <h2 class="form__title">Отправить заявку</h2>
      <p class="form__info">Просто оставьте нам свои контактные данные, наши менеджеры свяжутся с вами и ответят на все интересующие вас вопросы.</p>
-     <form action="mail.php" method="POST">
+     <form action="mail.php" method="POST" enctype="multipart/form-data">
        <input name="name" class="input__text" type="text" placeholder="Имя" required>
        <input name="number" class="input__text phone_mask" type="tel" placeholder="+7 (___) ___-____" required>
        <input name="mail" class="input__text" type="email" placeholder="Email" required>
@@ -35,7 +35,7 @@
    <div class="form" id="hidden-form" style="display: none;">
     <h2 class="form__title">Отправить заявку</h2>
     <p class="form__info">Просто оставьте нам свои контактные данные, наши менеджеры свяжутся с вами и ответят на все интересующие вас вопросы.</p>
-    <form action="mail.php" method="POST">
+    <form action="mail.php" method="POST" enctype="multipart/form-data">
       <input name="name" class="input__text" type="text" placeholder="Имя" required>
       <input name="mail" class="input__text" type="email" placeholder="Email" required>
       <input name="number" class="input__text phone_mask" type="tel" placeholder="+7 (___) ___-____" required>
